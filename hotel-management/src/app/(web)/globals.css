@@ -7,7 +7,7 @@
 }
 
 .scale-animation {
-  @apply hover:scale-125 transition-all duration-700;
+  @apply hover:scale-100 transition-all duration-700;
 }
 
 .btn-primary {

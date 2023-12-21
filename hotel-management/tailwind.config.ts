@@ -19,7 +19,7 @@ const config: Config = {
         },
       },
       fontFamily: {
-        poppins: ["var(--font-poppins)", ...fontFamily.sans],
+        roboto: ["var(--font-roboto)", ...fontFamily.sans],
       },
     },
   },

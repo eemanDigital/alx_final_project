@@ -21,7 +21,7 @@ export const authOptions: NextAuthOptions = {
   },
   adapter: SanityAdapter(sanityClient),
   debug: process.env.NODE_ENV === "development",
-  secret: process.env.NEXT_AUTH_SECRET,
+  secret: process.env.NEXTAUTH_SECRET,
   callbacks: {
     session: async ({ session, token }) => {
       const userEmail = token.email;

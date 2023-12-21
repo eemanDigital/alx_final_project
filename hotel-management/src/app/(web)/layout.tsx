@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Roboto } from "next/font/google";
 
 import Header from "@/components/Header/Header";
 import "./globals.css";
@@ -8,11 +8,11 @@ import ThemeProvider from "@/components/ThemeProvider/ThemeProvider";
 import { NextAuthProvider } from "@/components/AuthProvider/AuthProvider";
 import Toast from "@/components/Toast/Toast";
 
-const poppins = Poppins({
+const roboto = Roboto({
   subsets: ["latin"],
   weight: ["400", "500", "700", "900"],
   style: ["italic", "normal"],
-  variable: "--font-poppins",
+  variable: "--font-Roboto",
 });
 
 export const metadata: Metadata = {
@@ -34,7 +34,7 @@ export default function RootLayout({
           crossOrigin="anonymous"
         />
       </head>
-      <body className={poppins.className}>
+      <body className={roboto.className}>
         <NextAuthProvider>
           <ThemeProvider>
             <Toast />
